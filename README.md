@@ -7,8 +7,8 @@ It has the scope to create a REST API to load data in a SQLite database tables f
 
 The files are:
 
-db.py : Where the SQLite database and the three tables are created
-api_process.py : Where the REST API is created with Flask for loading data in the three tables, create the backups and logging.
-insert_data_backup.py : Where the API is invoqued and executes the processes to load the data in the three tables (taking into account logging) from three csv files and generate the backups in .AVRO format.
-restore_tables.py : Where the restore backups API is created in specific for employees table.
-upload_backup.py : Where the restore backup API is invoqued and load backup data in the employees table.
+- db.py : Where the SQLite database and the three tables are created
+- api_process.py : Where the REST API is created with Flask for loading data in the three tables, create the backups and logging.
+- insert_data_backup.py : Where the API is invoqued and executes the processes to load the data in the three tables (taking into account logging) from three csv files and generate the backups in .AVRO format.
+- restore_tables.py : Where the restore backups API is created in specific for employees table.
+- upload_backup.py : Where the restore backup API is invoqued and load backup data in the employees table.

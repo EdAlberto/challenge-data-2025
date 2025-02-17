@@ -3,7 +3,9 @@
 This repository is a code challenge. The programming language is Python.
 
 It has the scope to create a REST API to load data in a SQLite database tables from csv files: hired_employees, departments and jobs. Also is mandatory to create a log file with inserts failure logs, generate backups in
-.AVRO format and creating a process to load data in a table from certain backup .AVRO file.
+.AVRO format and creating a process to load data in a table from certain backup .AVRO file. 
+
+Also the second part is to create an endpoint for two specific queries.
 
 The files are:
 
@@ -12,3 +14,5 @@ The files are:
 - insert_data_backup.py : Where the API is invoqued and executes the processes to load the data in the three tables (taking into account logging) from three csv files and generate the backups in .AVRO format.
 - restore_tables.py : Where the restore backups API is created in specific for employees table.
 - upload_backup.py : Where the restore backup API is invoqued and load backup data in the employees table.
+- endpoint_queries.py : Where the endpoints for the two queries are created.
+- get_queries_results: Where the queries endpoints are invoqued and the results are shown.   
